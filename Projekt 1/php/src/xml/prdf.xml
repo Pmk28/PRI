@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fakulta děkan="Jméno Děkana">
+    <katedra zkratka_katedry="KAT" webové_stránky="https://www.ujep.cz/cs/">
+        <vedoucí>
+            <jméno>Jméno Vedoucího</jméno>
+            <telefon>123456789</telefon>
+            <email>vedouci@ujep.cz</email>
+        </vedoucí>
+        <zaměstnanci>
+            <zaměstnanec>
+                <jméno>Jméno Zaměstnance 1</jméno>
+                <telefon>987654321</telefon>
+                <email>zamestnanec1@ujep.cz</email>
+                <pozice>profesor</pozice>
+            </zaměstnanec>
+            <zaměstnanec>
+                <jméno>Jméno Zaměstnance 2</jméno>
+                <telefon>111222333</telefon>
+                <email>zamestnanec2@ujep.cz</email>
+                <pozice>asistent</pozice>
+            </zaměstnanec>
+        </zaměstnanci>
+        <předměty>
+            <předmět zkratka="MAT101" typ="přednáška">
+                <název>Matematika I</název>
+                <popis>Přednáška z matematiky pro začátečníky.</popis>
+            </předmět>
+            <předmět zkratka="INF102" typ="cvičení">
+                <název>Informatika II</název>
+                <popis>Cvičení z informatiky zaměřené na algoritmy.</popis>
+            </předmět>
+        </předměty>
+    </katedra>
+</fakulta>
