@@ -1,0 +1,9 @@
+<student>
+    <jmeno>Jan</jmeno>
+    <prijmeni>Novák</prijmeni>
+    <studentske_cislo>123456</studentske_cislo>
+    <fakulta>Fakulta informatiky</fakulta>
+    <rocnik>2</rocnik>
+    <obor>Informatika</obor>
+    <kontaktni_udaje email="jan.novak@example.com" telefon="123456789"/>
+</student>
