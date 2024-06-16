@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE fakulta SYSTEM "fakulta.dtd">
-<fakulta děkan="Prof. RNDr. Jan Veselý, DrSc.">
+<fakulta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="fakulta.xsd" děkan="Prof. RNDr. Jan Veselý, DrSc.">
     <!-- Katedra biologie -->
     <katedra zkratka_katedry="KBI" webové_stránky="https://www.ujep.cz/cs/kbi">
         <vedoucí>

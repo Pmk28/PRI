@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<university>
+<university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="student.xsd">
     <student studentNumber="F22111">
-        <name>Jan</name>
-        <surname>Novák</surname>
+        <firstName>Jan</firstName>
+        <lastName>Novák</lastName>
         <faculty>Přírodovědecká fakulta</faculty>
         <email>jan.novak@gmail.com</email>
         <address>
@@ -13,12 +14,12 @@
         <courses>
             <course>
                 <code>PRI</code>
-                <name>Programování pro internet</name>
+                <courseName>Programování pro internet</courseName>
                 <credits>4</credits>
             </course>
             <course>
                 <code>ZEK</code>
-                <name>Základy ekonomie</name>
+                <courseName>Základy ekonomie</courseName>
                 <credits>2</credits>
             </course>
         </courses>

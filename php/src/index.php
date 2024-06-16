@@ -14,7 +14,7 @@
         <?= $title ?>
     </h1>
 
-    <p>Nahrajte XML soubor, případně také DTD soubor.</p>
+    <p>Nahrajte XML soubor, případně také XSD soubor pro validaci.</p>
     <hr>
     <form enctype="multipart/form-data" method="POST">
         <table>
@@ -23,8 +23,8 @@
                 <td><input type="file" name="xml" accept="text/xml" data-max-file-size="2M"></td>
             </tr>
             <tr>
-                <td>DTD soubor:</td>
-                <td><input type="file" name="dtd" data-max-file-size="2M"></td>
+                <td>XSD soubor:</td>
+                <td><input type="file" name="xsd" accept="application/xml" data-max-file-size="2M"></td>
             </tr>
             <tr>
                 <td></td>
@@ -49,59 +49,52 @@
                 </tr>
             <?php } ?>
         </table>
-        <?php
+    <?php
     }
 
-    function validate($xmlPath, $dtdPath = '')
+    function validate($xmlPath, $xsdPath)
     {
         $doc = new DOMDocument;
 
-        // proběhne kontrola well-formed
+        // Kontrola well-formed
         libxml_use_internal_errors(true);
         $doc->loadXML(file_get_contents($xmlPath));
         printErrors();
         libxml_use_internal_errors(false);
 
-        // Máme root a DTD?
-        @$root = $doc->firstElementChild->tagName;
-        if ($root && $dtdPath) {
-            $root = $doc->firstElementChild->tagName;
-            $systemId = 'data://text/plain;base64,' . base64_encode(file_get_contents($dtdPath));
-
-            echo "<p>Validuji podle DTD. Kořen: <b>$root</b></p>";
-
-            // inject DTD into XML
-            $creator = new DOMImplementation;
-            $doctype = $creator->createDocumentType($root, '', $systemId);
-            $newDoc = $creator->createDocument(null, '', $doctype);
-            $newDoc->encoding = "utf-8";
-
-            $oldRootNode = $doc->getElementsByTagName($root)->item(0);
-            $newRootNode = $newDoc->importNode($oldRootNode, true);
-
-            $newDoc->appendChild($newRootNode);
-            $doc = $newDoc;
+        // Validace pomocí XSD
+        if ($xsdPath) {
+            $isValid = $doc->schemaValidate($xsdPath);
+            if ($isValid) {
+                echo "<p>Validace pomocí XSD byla úspěšná.</p>";
+            } else {
+                echo "<p>Chyby při validaci pomocí XSD:</p>";
+                printErrors();
+            }
+            return $isValid;
+        } else {
+            echo "<p>Nebyl zadán XSD soubor pro validaci.</p>";
+            return false;
         }
-
-        // validace
-        libxml_use_internal_errors(true);
-        $isValid = $doc->validate();
-        printErrors();
-        libxml_use_internal_errors(false);
-
-        return $isValid;
     }
 
-    // poslané soubory
-    $xmlFile = @$_FILES['xml'];
-    $dtdFile = @$_FILES['dtd'];
+    // Zpracování odeslaného formuláře
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $xmlFile = @$_FILES['xml'];
+        $xsdFile = @$_FILES['xsd'];
 
-    // Máme XML?
-    if (@$xmlTmpName = $xmlFile['tmp_name']) {
-        $dtdTmpName = $dtdFile['tmp_name'];
-        $isValid = validate($xmlTmpName, $dtdTmpName);
-        if ($isValid)
-            echo "Nahraný XML soubor je validní.";
+        // Zpracování nahraných souborů
+        if ($xmlFile && $xmlFile['error'] === UPLOAD_ERR_OK) {
+            $xmlTmpName = $xmlFile['tmp_name'];
+            $xsdTmpName = $xsdFile['tmp_name'];
+
+            $isValid = validate($xmlTmpName, $xsdTmpName);
+            if ($isValid) {
+                echo "<p>Nahraný XML soubor je validní.</p>";
+            }
+        } else {
+            echo "<p>Nastala chyba při nahrávání XML souboru.</p>";
+        }
     }
     ?>
 </body>
