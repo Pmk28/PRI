@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+<university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="student.xsd">
+
+    <student studentNumber="F22111">
+        <firstName>Jan</firstName>
+        <lastName>Novák</lastName>
+        <faculty>Přírodovědecká fakulta</faculty>
+        <email>jan.novak@gmail.com</email>
+        <address>
+            <street>Náměstí Míru</street>
+            <city>Ústí nad Labem</city>
+            <zipCode>60200</zipCode>
+        </address>
+        <courses>
+            <course>
+                <code>PRI</code>
+                <courseName>Programování pro internet</courseName>
+                <credits>4</credits>
+            </course>
+            <course>
+                <code>ZEK</code>
+                <courseName>Základy ekonomie</courseName>
+                <credits>2</credits>
+            </course>
+        </courses>
+    </student>
+</university>
