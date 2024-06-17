@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml/fakulta.xsl"?>
+<fakulty>
+  <fakulta>
+    <dekan>
+      <jmeno>Jan</jmeno>
+      <prijmeni>Novák</prijmeni>
+      <email>jan.novak@example.com</email>
+    </dekan>
+    <katedra zkratka_katedry="KIT" webové_stránky="https://www.ujep.cz/cs/kit">
+      <vedoucí>
+        <jméno>Jan</jméno>
+        <telefon>123456789</telefon>
+        <email>jan.novak@example.com</email>
+      </vedoucí>
+      <zaměstnanci>
+        <zaměstnanec>
+          <jméno>Michal</jméno>
+          <telefon>654321098</telefon>
+          <email>michal@example.com</email>
+          <pozice>
+            <profesor>profesor</profesor>
+          </pozice>
+        </zaměstnanec>
+      </zaměstnanci>
+      <předměty>
+        <předmět zkratka="INF101" typ="přednáška">
+          <název>Úvod do programování</název>
+          <popis>Základní kurz programování v jazyce C.</popis>
+        </předmět>
+      </předměty>
+    </katedra>
+  </fakulta>
+  <fakulta>
+    <dekan>
+      <jmeno>Petr</jmeno>
+      <prijmeni>Svoboda</prijmeni>
+      <email>petr.svoboda@example.com</email>
+    </dekan>
+    <katedra zkratka_katedry="KEK" webové_stránky="https://www.ujep.cz/cs/kek">
+      <vedoucí>
+        <jméno>Petr</jméno>
+        <telefon>234567890</telefon>
+        <email>petr.svoboda@example.com</email>
+      </vedoucí>
+      <zaměstnanci>
+        <zaměstnanec>
+          <jméno>Lucie</jméno>
+          <telefon>765432109</telefon>
+          <email>lucie@example.com</email>
+          <pozice>
+            <docent>docent</docent>
+          </pozice>
+        </zaměstnanec>
+      </zaměstnanci>
+      <předměty>
+        <předmět zkratka="EKON201" typ="seminář">
+          <název>Ekonomie 101</název>
+          <popis>Úvod do ekonomie.</popis>
+        </předmět>
+      </předměty>
+    </katedra>
+  </fakulta>
+  <fakulta>
+    <dekan>
+      <jmeno>Eva</jmeno>
+      <prijmeni>Kučerová</prijmeni>
+      <email>eva.kucerova@example.com</email>
+    </dekan>
+    <katedra zkratka_katedry="KBF" webové_stránky="https://www.ujep.cz/cs/kbf">
+      <vedoucí>
+        <jméno>Eva</jméno>
+        <telefon>345678901</telefon>
+        <email>eva.kucerova@example.com</email>
+      </vedoucí>
+      <zaměstnanci>
+        <zaměstnanec>
+          <jméno>Tomáš</jméno>
+          <telefon>876543210</telefon>
+          <email>tomas@example.com</email>
+          <pozice>
+            <odborný_asistent>odborný_asistent</odborný_asistent>
+          </pozice>
+        </zaměstnanec>
+      </zaměstnanci>
+      <předměty>
+        <předmět zkratka="BIO301" typ="cvičení">
+          <název>Mikrobiologie</název>
+          <popis>Pokročilá mikrobiologie.</popis>
+        </předmět>
+      </předměty>
+    </katedra>
+  </fakulta>
+  <fakulta>
+    <dekan>
+      <jmeno>Karel</jmeno>
+      <prijmeni>Dvořák</prijmeni>
+      <email>karel.dvorak@example.com</email>
+    </dekan>
+    <katedra zkratka_katedry="KHS" webové_stránky="https://www.ujep.cz/cs/khs">
+      <vedoucí>
+        <jméno>Karel</jméno>
+        <telefon>456789012</telefon>
+        <email>karel.dvorak@example.com</email>
+      </vedoucí>
+      <zaměstnanci>
+        <zaměstnanec>
+          <jméno>Jana</jméno>
+          <telefon>987654321</telefon>
+          <email>jana@example.com</email>
+          <pozice>
+            <asistent>asistent</asistent>
+          </pozice>
+        </zaměstnanec>
+      </zaměstnanci>
+      <předměty>
+        <předmět zkratka="HUM401" typ="kombinované">
+          <název>Sociologie</název>
+          <popis>Úvod do sociologie.</popis>
+        </předmět>
+      </předměty>
+    </katedra>
+  </fakulta>
+  <fakulta>
+    <dekan>
+      <jmeno>Marta</jmeno>
+      <prijmeni>Kovářová</prijmeni>
+      <email>marta.kovarova@example.com</email>
+    </dekan>
+    <katedra zkratka_katedry="KST" webové_stránky="https://www.ujep.cz/cs/kst">
+      <vedoucí>
+        <jméno>Marta</jméno>
+        <telefon>567890123</telefon>
+        <email>marta.kovarova@example.com</email>
+      </vedoucí>
+      <zaměstnanci>
+        <zaměstnanec>
+          <jméno>Pavel</jméno>
+          <telefon>098765432</telefon>
+          <email>pavel@example.com</email>
+          <pozice>
+            <lektor>lektor</lektor>
+          </pozice>
+        </zaměstnanec>
+      </zaměstnanci>
+      <předměty>
+        <předmět zkratka="STAV501" typ="přednáška">
+          <název>Stavební technologie</název>
+          <popis>Přehled stavebních technologií.</popis>
+        </předmět>
+      </předměty>
+    </katedra>
+  </fakulta>
+</fakulty>

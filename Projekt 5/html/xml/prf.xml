@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fakulta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="fakulta.xsd" děkan="Prof. RNDr. Jan Veselý, DrSc.">
+    <!-- Katedra biologie -->
+    <katedra zkratka_katedry="KBI" webové_stránky="https://www.ujep.cz/cs/kbi">
+        <vedoucí>
+            <jméno>Prof. Marie Nováková, CSc.</jméno>
+            <telefon>+420 475 283 001</telefon>
+            <email>marie.novakova@ujep.cz</email>
+        </vedoucí>
+        <zaměstnanci>
+            <zaměstnanec>
+                <jméno>RNDr. Jiří Svoboda</jméno>
+                <telefon>+420 475 283 002</telefon>
+                <email>jiri.svoboda@ujep.cz</email>
+                <pozice><docent/></pozice>
+            </zaměstnanec>
+            <zaměstnanec>
+                <jméno>Mgr. Lenka Malá</jméno>
+                <telefon>+420 475 283 003</telefon>
+                <email>lenka.mala@ujep.cz</email>
+                <pozice><odborný_asistent/></pozice>
+            </zaměstnanec>
+        </zaměstnanci>
+        <předměty>
+            <předmět zkratka="BI101" typ="přednáška">
+                <název>Úvod do biologie</název>
+                <popis>Základní pojmy a principy biologie.</popis>
+            </předmět>
+            <předmět zkratka="BI102" typ="cvičení">
+                <název>Laboratorní techniky</název>
+                <popis>Praktické dovednosti v biologickém výzkumu.</popis>
+            </předmět>
+        </předměty>
+    </katedra>
+
+    <!-- Katedra chemie -->
+    <katedra zkratka_katedry="KCH" webové_stránky="https://www.ujep.cz/cs/kch">
+        <vedoucí>
+            <jméno>Prof. Pavel Dvořák, Ph.D.</jméno>
+            <telefon>+420 475 283 101</telefon>
+            <email>pavel.dvorak@ujep.cz</email>
+        </vedoucí>
+        <zaměstnanci>
+            <zaměstnanec>
+                <jméno>Ing. Jan Novotný</jméno>
+                <telefon>+420 475 283 102</telefon>
+                <email>jan.novotny@ujep.cz</email>
+                <pozice><asistent/></pozice>
+            </zaměstnanec>
+            <zaměstnanec>
+                <jméno>Mgr. Petra Svobodová</jméno>
+                <telefon>+420 475 283 103</telefon>
+                <email>petra.svobodova@ujep.cz</email>
+                <pozice><lektor/></pozice>
+            </zaměstnanec>
+        </zaměstnanci>
+        <předměty>
+            <předmět zkratka="CH101" typ="seminář">
+                <název>Obecná chemie</název>
+                <popis>Základy obecné a anorganické chemie.</popis>
+            </předmět>
+            <předmět zkratka="CH102" typ="kombinované">
+                <název>Organická chemie</název>
+                <popis>Přednáška a praktická cvičení v organické chemii.</popis>
+            </předmět>
+        </předměty>
+    </katedra>
+
+    <!-- Katedra fyziky -->
+    <katedra zkratka_katedry="KFY" webové_stránky="https://www.ujep.cz/cs/kfy">
+        <vedoucí>
+            <jméno>Doc. Dr. Tomáš Král, CSc.</jméno>
+            <telefon>+420 475 283 201</telefon>
+            <email>tomas.kral@ujep.cz</email>
+        </vedoucí>
+        <zaměstnanci>
+            <zaměstnanec>
+                <jméno>PhDr. Eva Veselá</jméno>
+                <telefon>+420 475 283 202</telefon>
+                <email>eva.vesela@ujep.cz</email>
+                <pozice><odborný_asistent/></pozice>
+            </zaměstnanec>
+        </zaměstnanci>
+        <předměty>
+            <předmět zkratka="FY101" typ="přednáška">
+                <název>Mechanika</název>
+                <popis>Základy mechaniky a fyzikálních principů.</popis>
+            </předmět>
+            <předmět zkratka="FY102" typ="cvičení">
+                <název>Fyzikální experimenty</název>
+                <popis>Praktická cvičení z fyziky.</popis>
+            </předmět>
+        </předměty>
+    </katedra>
+</fakulta>
