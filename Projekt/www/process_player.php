@@ -19,28 +19,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $xml->formatOutput = true; // Nastavení formátování výstupu
     $xml->load($xmlFile);
 
-    $players = $xml->getElementsByTagName('players')->item(0);
+    // Vytvoření instance DOMXPath
+    $xpath = new DOMXPath($xml);
 
-    $newPlayer = $xml->createElement('player');
+    // Vyhledání hráče podle jména
+    $query = "//player[name='$name']";
+    $playerNodeList = $xpath->query($query);
 
-    $nameElement = $xml->createElement('name', $name);
-    $ageElement = $xml->createElement('age', $age);
-    $totalPointsElement = $xml->createElement('total_points', $total_points);
-    $numberOfRingsElement = $xml->createElement('number_of_rings', $number_of_rings);
-
-    $newPlayer->appendChild($nameElement);
-    $newPlayer->appendChild($ageElement);
-    $newPlayer->appendChild($totalPointsElement);
-    $newPlayer->appendChild($numberOfRingsElement);
-
-    $players->appendChild($newPlayer);
-
-    $xml->save($xmlFile);
-
-    if (validateXML($xmlFile, $xsdFile)) {
-        $message = "Player added successfully!";
+    if ($playerNodeList->length > 0) {
+        // Hráč již existuje
+        $message = "Player with the name '$name' already exists.";
     } else {
-        $message = "Error: The XML file is invalid!";
+        // Přidání nového hráče, protože neexistuje
+        $players = $xml->getElementsByTagName('players')->item(0);
+
+        $newPlayer = $xml->createElement('player');
+
+        $nameElement = $xml->createElement('name', $name);
+        $ageElement = $xml->createElement('age', $age);
+        $totalPointsElement = $xml->createElement('total_points', $total_points);
+        $numberOfRingsElement = $xml->createElement('number_of_rings', $number_of_rings);
+
+        $newPlayer->appendChild($nameElement);
+        $newPlayer->appendChild($ageElement);
+        $newPlayer->appendChild($totalPointsElement);
+        $newPlayer->appendChild($numberOfRingsElement);
+
+        $players->appendChild($newPlayer);
+
+        $xml->save($xmlFile);
+
+        if (validateXML($xmlFile, $xsdFile)) {
+            $message = "Player added successfully!";
+        } else {
+            $message = "Error: The XML file is invalid!";
+        }
     }
 } else {
     $message = "Invalid request method.";

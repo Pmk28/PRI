@@ -22,5 +22,4 @@ if (validateXML('data/teams.xml', 'data/schema.xsd')) {
     echo "XML data jsou neplatná.";
 }
 
-include 'templates/footer.php';
 ?>

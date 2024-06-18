@@ -25,14 +25,15 @@ nav {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Zachování bílé barvy */
+    text-decoration: none; /* Zrušení podtržení */
     margin: 0 15px;
-    font-size: 18px;
+    font-size: 18px; /* Větší písmo */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Podtržení při najetí myší */
+    cursor: pointer;
 }
 
 table {
@@ -97,7 +98,7 @@ form input[type="email"] {
 }
 
 form input[type="submit"],
-form button[type="submit"] {  /* Přidání stylů pro button input typu */
+form button[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
@@ -127,8 +128,4 @@ a {
     color: #4CAF50;
     text-decoration: none;
     font-size: 18px;
-}
-
-a:hover {
-    text-decoration: underline;
 }

@@ -23,5 +23,4 @@ if (validateXML('data/arenas.xml', 'data/schema.xsd')) {
     echo "XML data jsou neplatná.";
 }
 
-include 'templates/footer.php';
 ?>

@@ -33,4 +33,3 @@ Tyto 3 roky NBL a BAA soupeřili o to, kdo bude mít více fanoušků a větší
 5 týmů a připojila se k BAA, vznikla legendární NBA.
 </p>
 
-<?php include 'templates/footer.php'; ?>
