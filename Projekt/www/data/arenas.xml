@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arenas>
+    <arena>
+        <name>TD Garden</name>
+        <location>Boston, MA</location>
+        <capacity>18624</capacity>
+        <team>Boston Celtics</team>
+    </arena>
+    <arena>
+        <name>Barclays Center</name>
+        <location>Brooklyn, NY</location>
+        <capacity>17732</capacity>
+        <team>Brooklyn Nets</team>
+    </arena>
+    <arena>
+        <name>Madison Square Garden</name>
+        <location>New York, NY</location>
+        <capacity>19812</capacity>
+        <team>New York Knicks</team>
+    </arena>
+    <arena>
+        <name>Wells Fargo Center</name>
+        <location>Philadelphia, PA</location>
+        <capacity>20478</capacity>
+        <team>Philadelphia 76ers</team>
+    </arena>
+    <arena>
+        <name>Scotiabank Arena</name>
+        <location>Toronto, ON</location>
+        <capacity>19800</capacity>
+        <team>Toronto Raptors</team>
+    </arena>
+    <arena>
+        <name>United Center</name>
+        <location>Chicago, IL</location>
+        <capacity>20917</capacity>
+        <team>Chicago Bulls</team>
+    </arena>
+    <arena>
+        <name>Rocket Mortgage FieldHouse</name>
+        <location>Cleveland, OH</location>
+        <capacity>19432</capacity>
+        <team>Cleveland Cavaliers</team>
+    </arena>
+    <arena>
+        <name>Little Caesars Arena</name>
+        <location>Detroit, MI</location>
+        <capacity>20491</capacity>
+        <team>Detroit Pistons</team>
+    </arena>
+    <arena>
+        <name>Gainbridge Fieldhouse</name>
+        <location>Indianapolis, IN</location>
+        <capacity>17923</capacity>
+        <team>Indiana Pacers</team>
+    </arena>
+    <arena>
+        <name>Fiserv Forum</name>
+        <location>Milwaukee, WI</location>
+        <capacity>17500</capacity>
+        <team>Milwaukee Bucks</team>
+    </arena>
+    <arena>
+        <name>State Farm Arena</name>
+        <location>Atlanta, GA</location>
+        <capacity>16900</capacity>
+        <team>Atlanta Hawks</team>
+    </arena>
+    <arena>
+        <name>Spectrum Center</name>
+        <location>Charlotte, NC</location>
+        <capacity>19077</capacity>
+        <team>Charlotte Hornets</team>
+    </arena>
+    <arena>
+        <name>FTX Arena</name>
+        <location>Miami, FL</location>
+        <capacity>19600</capacity>
+        <team>Miami Heat</team>
+    </arena>
+    <arena>
+        <name>Amway Center</name>
+        <location>Orlando, FL</location>
+        <capacity>18846</capacity>
+        <team>Orlando Magic</team>
+    </arena>
+    <arena>
+        <name>Capital One Arena</name>
+        <location>Washington, D.C.</location>
+        <capacity>20456</capacity>
+        <team>Washington Wizards</team>
+    </arena>
+    <arena>
+        <name>Ball Arena</name>
+        <location>Denver, CO</location>
+        <capacity>19520</capacity>
+        <team>Denver Nuggets</team>
+    </arena>
+    <arena>
+        <name>Chase Center</name>
+        <location>San Francisco, CA</location>
+        <capacity>18064</capacity>
+        <team>Golden State Warriors</team>
+    </arena>
+    <arena>
+        <name>Toyota Center</name>
+        <location>Houston, TX</location>
+        <capacity>18300</capacity>
+        <team>Houston Rockets</team>
+    </arena>
+    <arena>
+        <name>Crypto.com Arena</name>
+        <location>Los Angeles, CA</location>
+        <capacity>19060</capacity>
+        <team>Los Angeles Clippers</team>
+    </arena>
+    <arena>
+        <name>Staples Center</name>
+        <location>Los Angeles, CA</location>
+        <capacity>19060</capacity>
+        <team>Los Angeles Lakers</team>
+    </arena>
+    <arena>
+        <name>FedExForum</name>
+        <location>Memphis, TN</location>
+        <capacity>18119</capacity>
+        <team>Memphis Grizzlies</team>
+    </arena>
+    <arena>
+        <name>American Airlines Center</name>
+        <location>Dallas, TX</location>
+        <capacity>19200</capacity>
+        <team>Dallas Mavericks</team>
+    </arena>
+    <arena>
+        <name>ATaT Center</name>
+        <location>San Antonio, TX</location>
+        <capacity>18381</capacity>
+        <team>San Antonio Spurs</team>
+    </arena>
+    <arena>
+        <name>Footprint Center</name>
+        <location>Phoenix, AZ</location>
+        <capacity>18055</capacity>
+        <team>Phoenix Suns</team>
+    </arena>
+    <arena>
+        <name>Moda Center</name>
+        <location>Portland, OR</location>
+        <capacity>19441</capacity>
+        <team>Portland Trail Blazers</team>
+    </arena>
+    <arena>
+        <name>Vivint Arena</name>
+        <location>Salt Lake City, UT</location>
+        <capacity>18306</capacity>
+        <team>Utah Jazz</team>
+    </arena>
+    <arena>
+        <name>Paycom Center</name>
+        <location>Oklahoma City, OK</location>
+        <capacity>18203</capacity>
+        <team>Oklahoma City Thunder</team>
+    </arena>
+    <arena>
+        <name>Target Center</name>
+        <location>Minneapolis, MN</location>
+        <capacity>19356</capacity>
+        <team>Minnesota Timberwolves</team>
+    </arena>
+    <arena>
+        <name>Smoothie King Center</name>
+        <location>New Orleans, LA</location>
+        <capacity>16867</capacity>
+        <team>New Orleans Pelicans</team>
+    </arena>
+    <arena>
+        <name>Golden 1 Center</name>
+        <location>Sacramento, CA</location>
+        <capacity>17583</capacity>
+        <team>Sacramento Kings</team>
+    </arena>
+</arenas>

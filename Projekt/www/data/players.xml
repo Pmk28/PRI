@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<players>
+  <player>
+    <name>LeBron James</name>
+    <age>39</age>
+    <total_points>40474</total_points>
+    <number_of_rings>4</number_of_rings>
+  </player>
+  <player>
+    <name>Jayson Tatum</name>
+    <age>26</age>
+    <total_points>11852</total_points>
+    <number_of_rings>1</number_of_rings>
+  </player>
+  <player>
+    <name>Stephen Curry</name>
+    <age>36</age>
+    <total_points>23668</total_points>
+    <number_of_rings>4</number_of_rings>
+  </player>
+  <player>
+    <name>Kevin Durant</name>
+    <age>35</age>
+    <total_points>28924</total_points>
+    <number_of_rings>2</number_of_rings>
+  </player>
+  <player>
+    <name>chris paul</name>
+    <age>39</age>
+    <total_points>22288</total_points>
+    <number_of_rings>0</number_of_rings>
+  </player>
+</players>
